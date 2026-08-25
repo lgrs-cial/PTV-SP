@@ -233,12 +233,12 @@
             <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
                 <div class="kpi-card">
                     <div class="kpi-label"><i class="fa-solid fa-bullseye"></i> Vendas Ago/26 (Proj)</div>
-                    <div class="kpi-val cyan">2.159 <span style="font-size: 0.8rem; color: #4ade80;">(+10,9%)</span></div>
+                    <div class="kpi-val cyan">2.193 <span style="font-size: 0.8rem; color: #4ade80;">(+12,7%)</span></div>
                     <div class="kpi-sub">Meta do Mês: 1.946 propostas</div>
                 </div>
                 <div class="kpi-card">
                     <div class="kpi-label"><i class="fa-solid fa-bolt"></i> Altas Ago/26 (Proj)</div>
-                    <div class="kpi-val gold">1.808 <span style="font-size: 0.8rem; color: #4ade80;">(+8,0%)</span></div>
+                    <div class="kpi-val gold">1.828 <span style="font-size: 0.8rem; color: #4ade80;">(+9,2%)</span></div>
                     <div class="kpi-sub">Meta do Mês: 1.674 instalações</div>
                 </div>
                 <div class="kpi-card cyan-accent">
@@ -352,48 +352,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- ========================================== -->
-        <!-- PAINEL 4: CHURN HISTÓRICO                 -->
-        <!-- ========================================== -->
-        <div class="panel" id="panel-4">
-            <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="kpi-card cyan-accent">
-                    <div class="kpi-label"><i class="fa-solid fa-percent"></i> Taxa de Churn (Jul/26)</div>
-                    <div class="kpi-val green">1,76%</div>
-                    <div class="kpi-sub">Menor índice histórico alcançado!</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-label"><i class="fa-solid fa-users-slash"></i> Churn Total Qtd (Jul/26)</div>
-                    <div class="kpi-val gold">1.068</div>
-                    <div class="kpi-sub">Queda contínua desde Abr/26 (2.391)</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-label"><i class="fa-solid fa-calculator"></i> Média do Período</div>
-                    <div class="kpi-val">2,43%</div>
-                    <div class="kpi-sub">Redução expressiva na retenção</div>
-                </div>
-            </div>
-
-            <div class="full-chart-container">
-                <div class="chart-header">
-                    <div class="chart-title"><i class="fa-solid fa-arrow-trend-down"></i> Evolução do Churn: Taxa (%) vs Volume Absoluto</div>
-                </div>
-                <div class="chart-wrapper">
-                    <canvas id="chartChurnSolo"></canvas>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- BARRA DE PROGRESSO DO LOOP AUTOMÁTICO -->
-    <div class="progress-bar-container">
-        <div class="progress-bar" id="progressBar"></div>
-    </div>
-
-    <script>
-        // =========================================================================
+         // =========================================================================
         // BANCO DE DADOS CENTRALIZADO
         // =========================================================================
         const HISTORICO_DATA = {
@@ -442,7 +401,47 @@
 { canal: 'AA', meta: -2, valores: [6, 0, 18, 18, 9, 14, 10, 6, 0, 15, 13, 11, 13, 9, 13, 0, 14, 20, 14, 19, 19, 14, 0], highlight: '' }
             ]
         };
+        
+        <!-- ========================================== -->
+        <!-- PAINEL 4: CHURN HISTÓRICO                 -->
+        <!-- ========================================== -->
+        <div class="panel" id="panel-4">
+            <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="kpi-card cyan-accent">
+                    <div class="kpi-label"><i class="fa-solid fa-percent"></i> Taxa de Churn (Jul/26)</div>
+                    <div class="kpi-val green">1,76%</div>
+                    <div class="kpi-sub">Menor índice histórico alcançado!</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label"><i class="fa-solid fa-users-slash"></i> Churn Total Qtd (Jul/26)</div>
+                    <div class="kpi-val gold">1.068</div>
+                    <div class="kpi-sub">Queda contínua desde Abr/26 (2.391)</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label"><i class="fa-solid fa-calculator"></i> Média do Período</div>
+                    <div class="kpi-val">2,43%</div>
+                    <div class="kpi-sub">Redução expressiva na retenção</div>
+                </div>
+            </div>
 
+            <div class="full-chart-container">
+                <div class="chart-header">
+                    <div class="chart-title"><i class="fa-solid fa-arrow-trend-down"></i> Evolução do Churn: Taxa (%) vs Volume Absoluto</div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="chartChurnSolo"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BARRA DE PROGRESSO DO LOOP AUTOMÁTICO -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <script>
         // =========================================================================
         // CONFIGURAÇÕES DE GRÁFICOS (Chart.js + Datalabels)
         // =========================================================================
