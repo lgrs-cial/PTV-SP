@@ -335,12 +335,12 @@
             <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
                 <div class="kpi-card">
                     <div class="kpi-label"><i class="fa-solid fa-bullseye"></i> Vendas Ago/26 (Proj)</div>
-                    <div class="kpi-val cyan">2.193 <span style="font-size: 0.8rem; color: #4ade80;">(+12,7%)</span></div>
+                    <div class="kpi-val cyan">2.218 <span style="font-size: 0.8rem; color: #4ade80;">(+14,0%)</span></div>
                     <div class="kpi-sub">Meta do Mês: 1.946 propostas</div>
                 </div>
                 <div class="kpi-card">
                     <div class="kpi-label"><i class="fa-solid fa-bolt"></i> Altas Ago/26 (Proj)</div>
-                    <div class="kpi-val gold">1.828 <span style="font-size: 0.8rem; color: #4ade80;">(+9,2%)</span></div>
+                    <div class="kpi-val gold">1.829 <span style="font-size: 0.8rem; color: #4ade80;">(+9,3%)</span></div>
                     <div class="kpi-sub">Meta do Mês: 1.674 instalações</div>
                 </div>
                 <div class="kpi-card cyan-accent">
@@ -388,13 +388,13 @@
                     <div class="kpi-card cyan-accent">
                         <div class="kpi-label">Realizado / Tendência</div>
                         <div class="kpi-val cyan">
-                            1.400 <span class="divider">|</span> <span class="tendency-val">1.828</span>
+                            1.479 <span class="divider">|</span> <span class="tendency-val">1.829</span>
                         </div>
                     </div>
                     <div class="kpi-card danger-accent">
                         <div class="kpi-label">% Atng. FC / Cresc M-1</div>
                         <div class="kpi-val red">
-                            95,7% <span class="divider">|</span> <span class="m1-val">+7,2%</span>
+                            95,8% <span class="divider">|</span> <span class="m1-val">+7,3%</span>
                         </div>
                     </div>
                 </div>
@@ -403,7 +403,7 @@
                     <div class="icon-box"><i class="fa-solid fa-gauge-high"></i></div>
                     <div class="eff-text">
                         <span class="eff-title">Eficiência Acumulada</span>
-                        <span class="eff-value" id="eff-val-badge">83,7%</span>
+                        <span class="eff-value" id="eff-val-badge">82,5%</span>
                     </div>
                 </div>
             </div>
@@ -502,11 +502,11 @@
             meses: ['Jul/25','Ago/25', 'Set/25', 'Out/25', 'Nov/25', 'Dez/25', 'Jan/26', 'Fev/26', 'Mar/26', 'Abr/26', 'Mai/26', 'Jun/26', 'Jul/26', 'Ago/26'],
             vendas: {
                 meta: [2199, 2229, 2291, 2362, 2113, 1728, 1563, 1563, 1797, 1418, 1420, 1435, 1842, 1946],
-                real: [1515, 1422, 1327, 1497, 1448, 1272, 1532, 1485, 1572, 1647, 1622, 1696, 2047, 2193]
+                real: [1515, 1422, 1327, 1497, 1448, 1272, 1532, 1485, 1572, 1647, 1622, 1696, 2047, 2218]
             },
             altas: {
                 meta: [1988, 2006, 2060, 2125, 1903, 1555, 1407, 1407, 1617, 1277, 1279, 1291, 1584, 1674],
-                real: [1352, 1293, 1145, 1288, 1197, 1053, 1185, 1221, 1336, 1374, 1407, 1350, 1709, 1828]
+                real: [1352, 1293, 1145, 1288, 1197, 1053, 1185, 1221, 1336, 1374, 1407, 1350, 1709, 1829]
             },
             netAdds: [-457, -458, -570, -395, -388, -384, 89, -696, -212, -1017, -80, 228, 641],
             churn: {
@@ -521,27 +521,28 @@
                 { d: 5, s: 'Qua' }, { d: 6, s: 'Qui' }, { d: 7, s: 'Sex' }, { d: 8, s: 'Sáb' }, 
                 { d: 9, s: 'Dom' }, { d: 10, s: 'Seg' }, { d: 11, s: 'Ter' }, { d: 12, s: 'Qua' },
                 { d: 13, s: 'Qui' }, { d: 14, s: 'Sex' }, { d: 15, s: 'Sáb' }, { d: 16, s: 'Dom' },
-                { d: 17, s: 'Seg' }, { d: 18, s: 'Ter' }, { d: 19, s: 'Qua' }, { d: 20, s: 'Qui' }, { d: 21, s: 'Sex' }, { d: 22, s: 'Sab' }, { d: 23, s: 'Dom' }, { d: 24, s: 'Seg' }
+                { d: 17, s: 'Seg' }, { d: 18, s: 'Ter' }, { d: 19, s: 'Qua' }, { d: 20, s: 'Qui' }, { d: 21, s: 'Sex' }, { d: 22, s: 'Sab' }, { d: 23, s: 'Dom' }, { d: 24, s: 'Seg' },
+                { d: 25, s: 'Ter' }
             ],
             vendas: [
-                { canal: 'REGIONAL SP', meta: 101, valores: [0,0,148,96,105,62,86,33,0,99,90,92,85,97,32,0,104,109,90,91,97,47,0,118], highlight: 'regional' },
-                { canal: 'Presenciais', meta: 35, valores: [0,0,54,37,42,25,37,20,0,34,28,32,40,46,15,0,42,46,35,47,50,22,0,34], highlight: 'presencial' },
-                { canal: 'Remotos', meta: 66, valores: [0,0,94,59,63,37,49,13,0,65,62,60,45,51,17,0,62,63,55,44,47,25,0,84], highlight: 'remoto' },
-                { canal: 'Inside Sales', meta: 66, valores: [0,0,89,47,54,29,33,11,0,63,44,46,37,40,15,0,55,60,49,42,45,22,0,83], highlight: '' },
-                { canal: 'Digital', meta: 0, valores: [0,0,5,12,9,8,16,2,0,2,18,14,8,11,2,0,7,3,6,2,2,3,0,1], highlight: '' },
-                { canal: 'Lojas', meta: 21, valores: [0,0,16,7,13,9,18,4,0,15,12,8,9,20,4,0,14,8,12,9,10,8,0,17], highlight: '' },
-                { canal: 'PaP Próprio', meta: 5, valores: [0,0,9,12,10,8,8,4,0,5,10,10,9,8,3,0,11,14,10,7,7,7,0,10], highlight: '' },
-                { canal: 'AA', meta: 8, valores: [0,0,29,18,19,8,11,12,0,14,6,14,22,18,8,0,17,24,13,31,33,7,0,7], highlight: '' }
+                { canal: 'REGIONAL SP', meta: 101, valores: [0,0,148,96,105,62,86,33,0,99,90,92,85,97,32,0,104,109,90,91,97,47,0,117,114], highlight: 'regional' },
+                { canal: 'Presenciais', meta: 35, valores: [0,0,54,37,42,25,37,20,0,34,28,32,40,46,15,0,42,46,35,47,50,22,0,34,37], highlight: 'presencial' },
+                { canal: 'Remotos', meta: 66, valores: [0,0,94,59,63,37,49,13,0,65,62,60,45,51,17,0,62,63,55,44,47,25,0,84,77], highlight: 'remoto' },
+                { canal: 'Inside Sales', meta: 66, valores: [0,0,89,47,54,29,33,11,0,63,44,46,37,40,15,0,55,60,49,42,45,22,0,83,75], highlight: '' },
+                { canal: 'Digital', meta: 0, valores: [0,0,5,12,9,8,16,2,0,2,18,14,8,11,2,0,7,3,6,2,2,3,0,1,2], highlight: '' },
+                { canal: 'Lojas', meta: 21, valores: [0,0,16,7,13,9,18,4,0,15,12,8,9,20,4,0,14,8,12,9,10,8,0,17,161], highlight: '' },
+                { canal: 'PaP Próprio', meta: 5, valores: [0,0,9,12,10,8,8,4,0,5,10,10,9,8,3,0,11,14,10,7,7,7,0,10,12], highlight: '' },
+                { canal: 'AA', meta: 8, valores: [0,0,29,18,19,8,11,12,0,14,6,14,22,18,8,0,17,24,13,31,33,7,0,7,9], highlight: '' }
             ],
             altas: [
-                { canal: 'REGIONAL SP', meta: 93, valores: [44, 2, 56, 84, 79, 76, 64, 45, 1, 61, 82, 80, 64, 72, 49, 0, 71, 91, 75, 80, 74, 57, 1, 71], highlight: 'regional' },
-                { canal: 'Presenciais', meta: 22, valores: [26, 1, 28, 34, 24, 36, 22, 15, 1, 28, 35, 28, 21, 40, 21, 0, 39, 35, 32, 32, 39, 27, 0, 33], highlight: 'presencial' },
-                { canal: 'Remotos', meta: 71, valores: [18, 1, 28, 50, 55, 40, 42, 30, 0, 33, 47, 52, 43, 32, 28, 0, 32, 56, 43, 48, 35, 30, 1, 38], highlight: 'remoto' },
-                { canal: 'Inside Sales', meta: 70, valores: [12, 1, 27, 45, 47, 36, 30, 24, 0, 30, 45, 40, 35, 29, 25, 0, 28, 48, 40, 42, 33, 35, 1, 36], highlight: '' },
-                { canal: 'Digital', meta: 0, valores: [6, 0, 1, 5, 8, 4, 12, 6, 0, 3, 2, 12, 8, 3, 3, 0, 4, 8, 3, 6, 2, 3, 0, 2], highlight: '' },
-                { canal: 'Lojas', meta: 21, valores: [15, 0, 4, 10, 11, 9, 7, 6, 1, 10, 10, 11, 3, 18, 6, 0, 16, 8, 12, 8, 10, 6, 0, 16], highlight: '' },
-                { canal: 'PaP Próprio', meta: 3, valores: [5, 1, 6, 6, 4, 13, 5, 3, 0, 3, 12, 6, 5, 13, 2, 0, 9, 7, 6, 5, 10, 7, 0, 5], highlight: '' },
-                { canal: 'AA', meta: -2, valores: [6, 0, 18, 18, 9, 14, 10, 6, 0, 15, 13, 11, 13, 9, 13, 0, 14, 20, 14, 19, 19, 14, 0, 12], highlight: '' }
+                { canal: 'REGIONAL SP', meta: 96, valores: [44, 2, 56, 84, 79, 76, 64, 45, 1, 61, 82, 80, 64, 72, 49, 0, 71, 91, 75, 80, 75, 78, 1, 83, 66], highlight: 'regional' },
+                { canal: 'Presenciais', meta: 16, valores: [26, 1, 28, 34, 24, 36, 22, 15, 1, 28, 35, 28, 21, 40, 21, 0, 39, 35, 32, 32, 40, 37, 0, 37, 21], highlight: 'presencial' },
+                { canal: 'Remotos', meta: 80, valores: [18, 1, 28, 50, 55, 40, 42, 30, 0, 33, 47, 52, 43, 32, 28, 0, 32, 56, 43, 48, 35, 41, 1, 46, 45], highlight: 'remoto' },
+                { canal: 'Inside Sales', meta: 81, valores: [12, 1, 27, 45, 47, 36, 30, 24, 0, 30, 45, 40, 35, 29, 25, 0, 28, 48, 40, 42, 33, 35, 1, 43, 44], highlight: '' },
+                { canal: 'Digital', meta: -1, valores: [6, 0, 1, 5, 8, 4, 12, 6, 0, 3, 2, 12, 8, 3, 3, 0, 4, 8, 3, 6, 2, 6, 0, 3, 1], highlight: '' },
+                { canal: 'Lojas', meta: 24, valores: [15, 0, 4, 10, 11, 9, 7, 6, 1, 10, 10, 11, 3, 18, 6, 0, 16, 8, 12, 8, 11, 11, 0, 16, 10], highlight: '' },
+                { canal: 'PaP Próprio', meta: 1, valores: [5, 1, 6, 6, 4, 13, 5, 3, 0, 3, 12, 6, 5, 13, 2, 0, 9, 7, 6, 5, 10, 9, 0, 6, 5], highlight: '' },
+                { canal: 'AA', meta: -9, valores: [6, 0, 18, 18, 9, 14, 10, 6, 0, 15, 13, 11, 13, 9, 13, 0, 14, 20, 14, 19, 19, 17, 0, 15, 6], highlight: '' },
             ]
         };
 
